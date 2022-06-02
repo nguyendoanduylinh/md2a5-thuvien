@@ -1,0 +1,13 @@
+import { Book } from "./book";
+import { BookManager } from "./bookManager";
+let bookManager = new BookManager();
+let book1 = new Book(1, "ABC");
+let book2 = new Book(2, "ABC");
+let book3 = new Book(3, "ABC");
+let book4 = new Book(4, "ABC");
+bookManager.addBook(book1);
+bookManager.addBook(book2);
+bookManager.addBook(book3);
+bookManager.addBook(book4);
+bookManager.deleteBook(2);
+console.log(bookManager);
